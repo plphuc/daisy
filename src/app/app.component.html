@@ -1,4 +1,9 @@
-<!-- NG-ZORRO -->
-<a href="https://github.com/NG-ZORRO/ng-zorro-antd" target="_blank" style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;">
-  <img height="300" src="https://img.alicdn.com/tfs/TB1X.qJJgHqK1RjSZFgXXa7JXXa-89-131.svg">
-</a>
+<nz-layout class="h-full">
+  <nz-header class="bg-mainColor p-0"><app-header></app-header></nz-header>
+  <nz-layout>
+    <nz-sider nzWidth="150px" class="bg-mainColor pl-2 pb-4">
+      <app-sidebar></app-sidebar>
+    </nz-sider>
+    <nz-content class="bg-mainColor">main content</nz-content>
+  </nz-layout>
+</nz-layout>
