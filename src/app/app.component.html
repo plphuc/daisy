@@ -1,9 +1,11 @@
-<nz-layout class="h-full">
-  <nz-header class="bg-mainColor p-0"><app-header></app-header></nz-header>
-  <nz-layout>
-    <nz-sider nzWidth="150px" class="bg-mainColor pl-2 pb-4">
-      <app-sidebar></app-sidebar>
-    </nz-sider>
-    <nz-content class="bg-mainColor">main content</nz-content>
+<div class="bg-mainColor h-full">
+  <nz-layout class="h-full w-[95%] bg-mainColor m-auto">
+    <nz-header class="bg-mainColor p-0"><app-header></app-header></nz-header>
+    <nz-layout class="mt-4">
+      <nz-sider nzWidth="200px" class="bg-mainColor pl-2">
+        <app-sidebar></app-sidebar>
+      </nz-sider>
+      <nz-content class="bg-mainColor"><router-outlet></router-outlet></nz-content>
+    </nz-layout>
   </nz-layout>
-</nz-layout>
+</div>

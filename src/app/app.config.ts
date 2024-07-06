@@ -3,7 +3,7 @@ import {
   provideZoneChangeDetection,
   importProvidersFrom,
 } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, RouterLink } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
@@ -22,7 +22,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(),
     provideNzI18n(en_US),
-    importProvidersFrom([FormsModule]),
+    importProvidersFrom([FormsModule, RouterLink]),
     provideAnimationsAsync(),
     provideHttpClient(),
   ],
