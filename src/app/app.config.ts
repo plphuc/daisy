@@ -13,6 +13,9 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient } from '@angular/common/http';
+import { IconModule } from '@ant-design/icons-angular';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { HomeOutline, ShoppingCartOutline } from '@ant-design/icons-angular/icons';
 
 registerLocaleData(en);
 
@@ -22,7 +25,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(),
     provideNzI18n(en_US),
-    importProvidersFrom([FormsModule, RouterLink]),
+    importProvidersFrom([FormsModule, RouterLink, IconModule, NzIconModule.forChild([HomeOutline, ShoppingCartOutline])]),
     provideAnimationsAsync(),
     provideHttpClient(),
   ],

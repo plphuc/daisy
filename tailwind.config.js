@@ -7,6 +7,7 @@ module.exports = {
         mainColor: "#fbf8f6",
         primaryColor: "#F3EBE5",
         textColor: "#64748b",
+        itemColor: "#f3ebe5"
       },
     },
   },

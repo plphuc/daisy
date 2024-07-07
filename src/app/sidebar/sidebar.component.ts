@@ -5,7 +5,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [NzIconModule, CommonModule],
+  imports: [CommonModule, NzIconModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css'
 })

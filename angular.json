@@ -21,10 +21,6 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
-              },
-              {
-                "glob": "**/*",
                 "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
                 "output": "/assets/"
               }
@@ -88,10 +84,10 @@
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/assets/images/*",
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
               }
             ],
             "styles": ["src/styles.css"],
